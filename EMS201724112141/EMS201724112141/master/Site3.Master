@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site3.master.cs" Inherits="EMS201724112141.master.Site3"  Debug="true" MasterPageFile="~/master/IndexSite.Master"%>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="leftContentPlaceHolder" runat="server">
+    <link href="../css/StyleSheet3.css" rel="stylesheet" />
+    <script src="../js/FormControl1.js"></script>
+    <p><a href="../WebForm3/WebForm3-1.aspx">展示部门信息</a></p>
+    <p><a href="../WebForm3/WebForm3-2.aspx">查询部门信息</a></p>
+    <p><a href="../WebForm3/WebForm3-3.aspx">更新部门信息</a></p>
+    <p><a href="../WebForm3/WebForm3-4.aspx">添加部门信息</a></p>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="rightContentPlaceHolder" runat="server">
+        <asp:ContentPlaceHolder ID="right" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

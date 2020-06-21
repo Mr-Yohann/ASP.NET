@@ -1,0 +1,93 @@
+﻿.view-title {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left:-30px;
+}
+.view-table {
+    font-size: 25px;
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: auto;
+    width: 1200px;
+    height: 600px;
+}
+
+.view-img {
+    text-align: center;
+}
+/*
+    form1-1
+*/
+#view1 {
+    margin-top: 50px;
+    margin-left: 2%;
+}
+
+#view1-table {
+    font-size: 25px;
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: auto;
+    width: 1200px;
+    height: 600px;
+}
+
+#view1-img {
+    text-align: center;
+}
+/*
+    form1-2
+*/
+#view2 {
+    margin-top: 50px;
+    margin-left: 2%;
+}
+#search {
+    text-align:center;
+    font-size:30px;
+}
+/*
+    form1-3
+*/
+#view3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#table3 {
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+.update {
+    margin-top: 30px;
+    margin-left: 30%;
+}
+/*
+    form1-4
+*/
+.auto-style1 {
+    width: 150px;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#add {
+    margin-left: 37%;
+}
+
+#view4-bottom {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.auto-style2 {
+    width: 150px;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 34px;
+}

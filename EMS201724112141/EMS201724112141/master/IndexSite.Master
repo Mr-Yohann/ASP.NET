@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="IndexSite.master.cs" Inherits="EMS201724112141.master.IndexSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    </title>
+    <style type="text/css">
+        body{
+            width:100%;
+            background-color:#F5F5F5;
+        }
+        .top{
+            background-color:rgb(240, 240, 240);
+            margin-top:-10px;
+            padding-top:1.5%;
+            padding-bottom:1.5%;
+            margin-left:-5%;
+        }
+        .top span{
+            font-size:40px;
+            margin-left:8%;
+            font-weight:bolder;
+            box-shadow:-20px -20px 40px -40px rgba(245, 245, 245, 1), -20px -20px 40px -40px rgba(0, 0, 0, .3);
+            padding:24px;
+            border-radius:200px;
+            background:linear-gradient(135deg, rgba(225, 225, 225, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+        .top span:hover{
+            box-shadow:-20px -20px 40px -32px rgba(245, 245, 245, 1), -20px -20px 40px -32px rgba(0, 0, 0, .3) inset;
+        }
+        a{
+            color:black;
+            text-decoration:none;
+        }
+        a:hover{
+            color:red;
+        }
+        .main{
+            width:100%;
+        }
+        .left{
+            background-color:rgb(240, 240, 240);
+            float:left;
+            width:30%;
+            margin-top:20px;
+            margin-left:-50px;
+        }
+        .right{
+            width:68%;
+            margin-top:20px;
+            float:right;
+        }
+        .left p{
+            font-size:35px;
+            text-align:center;
+            margin-top:110px;
+            margin-bottom:113px;
+        }
+        .left p a{
+            box-shadow:-20px -20px 40px -32px rgba(255, 255, 255, 1), -20px -20px 40px -32px rgba(0, 0, 0, .3);
+            padding:24px;
+            border-radius:80px;
+            background:linear-gradient(135deg, rgba(230, 230, 230, 1) 0%, rgba(246, 246, 246, 1) 100%);
+        }
+        .left p a:hover{
+            box-shadow:-20px -20px 40px -32px rgba(255, 255, 255, 1), -20px -20px 40px -32px rgba(0, 0, 0, .3) inset;
+        }
+        #logout{
+            box-shadow:none;
+            padding:0;
+            padding-bottom:0;
+            border-radius:0;
+            background:none;
+        }
+        #logout:hover{
+            box-shadow:none;
+        }
+    </style>
+    <script src="../jquery/jquery-1.11.0.min.js"></script>
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="top">
+            <span><a href="../index.aspx">首页</a></span>
+            <span><a href="../WebForm1/WebForm1-1.aspx">设备信息</a></span>
+            <span><a href="../WebForm2/WebForm2-1.aspx">员工信息</a></span>
+            <span><a href="../WebForm3/WebForm3-1.aspx">部门信息</a></span>
+            <span id="logout"><asp:Button ID="Button1" runat="server" Text="退出登录" Height="50px" OnClick="Button1_Click" Width="200px" BackColor="#F0F0F0" BorderStyle="None" Font-Size="40px" ForeColor="Red" /></span>
+        </div>
+        <div class="main">
+            <div class="left"><asp:ContentPlaceHolder ID="leftContentPlaceHolder" runat="server"></asp:ContentPlaceHolder></div>
+            <div class="right">
+                <asp:ContentPlaceHolder ID="rightContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site4.master.cs" Inherits="EMS201724112141.master.Site4" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    </title>
+    <style type="text/css">
+        body{
+            width:100%;
+            background-color:#F5F5F5;
+        }
+        .main{
+            width:100%;
+            margin-top:-2%;
+        }
+        .left{
+            background-color:rgb(240, 240, 240);
+            float:left;
+            width:30%;
+            margin-top:20px;
+            margin-left:-50px;
+        }
+        .right{
+            width:68%;
+            margin-top:20px;
+            float:right;
+        }
+        .left p{
+            font-size:35px;
+            text-align:center;
+            margin-top:110px;
+            margin-bottom:113px;
+        }
+        a:hover{
+            color:red;
+        }
+        .left p a{
+            color:black;
+            text-decoration:none;
+            box-shadow:-20px -20px 40px -32px rgba(255, 255, 255, 1), -20px -20px 40px -32px rgba(0, 0, 0, .3);
+            padding:24px;
+            border-radius:80px;
+            background:linear-gradient(135deg, rgba(230, 230, 230, 1) 0%, rgba(246, 246, 246, 1) 100%);
+        }
+        .left p a:hover{
+            box-shadow:-20px -20px 40px -32px rgba(255, 255, 255, 1), -20px -20px 40px -32px rgba(0, 0, 0, .3) inset;
+        }
+        #logout2{
+            box-shadow:none;
+            padding:0;
+            padding-bottom:0;
+            border-radius:0;
+            background:none;
+        }
+        #logout2:hover{
+            box-shadow:none;
+        }
+    </style>
+    <link href="../css/StyleSheet4.css" rel="stylesheet" />
+    <script src="../jquery/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="main">
+            <div class="left">
+                <p><a href="../simple/simpleIndex.aspx">首页</a></p>
+                <p><a href="../simple/simple1.aspx">查询设备信息</a></p>
+                <p><a href="../simple/simple2.aspx">查询员工信息</a></p>
+                <p><a href="../simple/simple3.aspx">查询部门信息</a></p>
+                <p id="logout2"><asp:Button ID="Button2" runat="server" Text="退出登录" Height="50px" OnClick="Button1_Click" Width="200px" BackColor="#F0F0F0" BorderStyle="None" Font-Size="40px" ForeColor="Red" /></p>
+            </div>
+            <div class="right">
+                <asp:ContentPlaceHolder ID="rightContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
