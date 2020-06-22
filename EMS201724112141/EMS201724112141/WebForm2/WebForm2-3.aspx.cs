@@ -66,7 +66,7 @@ namespace EMS201724112141.WebForm2
 
             if (result > 0)
             {
-                Response.Write("<script>window.onload = function () {alert('删除成功');}</script>");
+                Response.Redirect("~/WebForm2/WebForm2-3.aspx");
             }
         }
 

@@ -95,14 +95,6 @@
     <Content Include="css\StyleSheet4.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="images\1.png" />
-    <Content Include="images\2.png" />
-    <Content Include="images\20200603171333.png" />
-    <Content Include="images\202006031751.PNG" />
-    <Content Include="images\20200603175216.PNG" />
-    <Content Include="images\20200603175233.PNG" />
-    <Content Include="images\20200603175850.PNG" />
-    <Content Include="images\20200604151209.PNG" />
     <Content Include="index.aspx" />
     <Content Include="jquery\jquery-1.11.0.js" />
     <Content Include="jquery\jquery-1.11.0.min.js" />
@@ -359,6 +351,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

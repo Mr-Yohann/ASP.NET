@@ -21,10 +21,7 @@ namespace EMS201724112141.WebForm3
         public void Table1()
         {
             //通过linq+ef技术查询
-            var result = from dp in myDBEntities.department
-                         join ep in myDBEntities.employee
-                         on dp.ep_id equals ep.ep_id
-                         select new { department = dp, employee = ep };
+            var result = myDBEntities.department;
 
             //设置表头
             string write = "<table id='table1' border=1 cellspacing=0 cellpadding=2 style='font-size:30px'>";
@@ -32,19 +29,15 @@ namespace EMS201724112141.WebForm3
             write += "<td>部门编号</td>";
             write += "<td>部门名称</td>";
             write += "<td>主管编号</td>";
-            write += "<td>主管姓名</td>";
-            write += "<td>主管手机号</td>";
             write += "</tr>";
 
             //遍历 填充数据
             foreach (var a in result)
             {
                 write += "<tr>";
-                write += "<td>" + a.department.dp_id + "</td>";
-                write += "<td>" + a.department.name + "</td>";
-                write += "<td>" + a.department.ep_id + "</td>";
-                write += "<td>" + a.employee.name + "</td>";
-                write += "<td>" + a.employee.phone + "</td>";
+                write += "<td>" + a.dp_id + "</td>";
+                write += "<td>" + a.name + "</td>";
+                write += "<td>" + a.ep_id + "</td>";
                 write += "</tr>";
             }
             write += "</table>";
@@ -69,7 +62,7 @@ namespace EMS201724112141.WebForm3
 
             if(result > 0)
             {
-                Response.Write("<script>window.onload = function () {alert('删除成功');}</script>");
+                Response.Redirect("~/WebForm3/WebForm3-3.aspx");
             }
         }
 
@@ -84,7 +77,7 @@ namespace EMS201724112141.WebForm3
                 Label2.Text = update.dp_id.ToString();
                 TextBox2.Text = update.name;
                 Response.Write("<script>window.onload = function () {$('#hid3').attr('style', 'display: none; ');$('.update').attr('style', 'display: block; ');}</script>");
-                setDropDownList(update.dp_id, Convert.ToInt32(update.ep_id.ToString()));
+                setDropDownList(update.dp_id, Convert.ToInt32(update.ep_id));
             }
             catch (Exception ex)
             {
@@ -100,6 +93,8 @@ namespace EMS201724112141.WebForm3
                              "Integrated Security=True";
             //新建连接
             SqlConnection myConnection = new SqlConnection(sqlconn);
+
+            Response.Write(1);
 
             try
             {

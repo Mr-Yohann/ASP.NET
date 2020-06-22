@@ -14,15 +14,15 @@ namespace EMS201724112141.master
 
             try
             {
-                //检测是否为管理员
-                if (Session["super"] == null)
+                //检测是否为管理员登录
+                if (Session["super"] == null || Session["id"] == null)
                 {
-                    Response.Redirect("~/simple/simpleIndex.aspx");
+                    Response.Redirect("~/Default.aspx");//返回登录页面
                 }
             }
             catch (NullReferenceException ex)
             {
-                Response.Redirect("~/simple/simpleIndex.aspx");
+                Response.Redirect("~/Default.aspx");//返回登录页面
             }
         }
 

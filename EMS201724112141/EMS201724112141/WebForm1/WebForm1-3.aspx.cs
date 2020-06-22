@@ -43,7 +43,7 @@ namespace EMS201724112141.WebForm1
                     //删除文件
                     File.Delete(fileName);
                 }
-                Response.Write("<script>window.onload = function () {alert('删除成功');}</script>");
+                Response.Redirect("~/WebForm1/WebForm1-3.aspx");
             }
         }
 
