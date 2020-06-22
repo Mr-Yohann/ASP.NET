@@ -30,7 +30,7 @@
                 <div class="col-sm-4">
                 </div>
                 <div class="col-sm-4"  style="font-size:30px;">
-                    密码：<asp:TextBox ID="TextBox2" runat="server" Height="40px" Width="200px" Font-Size="20px"></asp:TextBox>
+                    密码：<asp:TextBox ID="TextBox2" runat="server" Height="40px" Width="200px" Font-Size="20px" TextMode="Password"></asp:TextBox>
                 </div>
                 <div class="col-sm-4">
                 </div>

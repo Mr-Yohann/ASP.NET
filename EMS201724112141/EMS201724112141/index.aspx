@@ -14,7 +14,7 @@
         string greetings = "";
 
         //根据系统时间呈现不同的问候语
-        if(time >= 6000 && time < 1130)
+        if(time >= 600 && time < 1130)
         {
             greetings = "早上好！";
         }
